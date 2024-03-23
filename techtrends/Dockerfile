@@ -1,7 +1,7 @@
 FROM python:3.8
 LABEL maintainer="Tommy Ayonz"
 
-COPY . /src
+COPY ./techtrends /src
 
 WORKDIR /src
 
