@@ -33,4 +33,4 @@ jobs:
           file: ./techtrends/Dockerfile
           platforms: linux/amd64
           push: true
-          tags: tomiwasalau01/techtrends:latest
+          tags: tomiwasalau01/techtrends:v2.0.0
