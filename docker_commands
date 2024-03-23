@@ -1,0 +1,38 @@
+## Docker commands used to build the application 
+docker build -t techtrends .
+
+
+## Docker commands used to run the application
+docker run -d -p 7111:3111 techtrends
+docker images
+
+## Docker commands used to get the application logs
+docker ps
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container 
+docker logs -f bd45147fb399
+
+# Add tags
+docker tag techtrends:v1.0.0 tomiwasalau01/techtrends:v.1.0.0
+
+# Push to dockerhub
+docker push tomiwasalau01/techtrends:v.1.0.0
+
+
+# logs
+
+(base) ayotomiwasalau@ayotomialausMBP techtrends % docker logs -f bd45147fb399
+ * Serving Flask app 'app'
+ * Debug mode: on
+2024-03-23 14:22:18,642 INFO: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://172.17.0.2:3111
+2024-03-23 14:22:18,642 INFO: Press CTRL+C to quit
+2024-03-23 14:22:18,642 INFO:  * Restarting with stat
+2024-03-23 14:22:18,730 WARNING:  * Debugger is active!
+2024-03-23 14:22:18,732 INFO:  * Debugger PIN: 136-374-534
+2024-03-23 14:27:06,373 INFO: 192.168.65.1 - - [23/Mar/2024 14:27:06] "GET / HTTP/1.1" 200 -
+2024-03-23 14:27:07,048 INFO: 192.168.65.1 - - [23/Mar/2024 14:27:07] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-03-23 14:27:08,506 INFO: 192.168.65.1 - - [23/Mar/2024 14:27:08] "GET /favicon.ico HTTP/1.1" 404 -
