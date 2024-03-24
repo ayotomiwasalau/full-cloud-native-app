@@ -1,4 +1,4 @@
-## Deploying an app to cloud using Kubernetes 
+## Deploying an app to Kubernetes using a CI/CD pipeline 
 TechTrends is an online website used as a news sharing platform, that enables consumers to access the latest news within the cloud-native ecosystem. In addition to accessing the available articles, readers are able to create new media articles and share them.
 
 As a platform engineer, The goal of these project is to package and deploy TechTrends to Kubernetes using a CI/CD pipeline.
