@@ -9,7 +9,7 @@ service:
 
 image:
   repository: tomiwasalau01/techtrends 
-  tag: V2.0.0
+  tag: v2.0.0
   pullPolicy: IfNotPresent
 
 replicaCount: 1
