@@ -36,3 +36,75 @@ docker push tomiwasalau01/techtrends:v.1.0.0
 2024-03-23 14:27:06,373 INFO: 192.168.65.1 - - [23/Mar/2024 14:27:06] "GET / HTTP/1.1" 200 -
 2024-03-23 14:27:07,048 INFO: 192.168.65.1 - - [23/Mar/2024 14:27:07] "GET /static/css/main.css HTTP/1.1" 200 -
 2024-03-23 14:27:08,506 INFO: 192.168.65.1 - - [23/Mar/2024 14:27:08] "GET /favicon.ico HTTP/1.1" 404 -
+
+
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.0.185:3111
+2024-03-25 10:38:55,665 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.0.185:3111
+Press CTRL+C to quit
+2024-03-25 10:38:55,665 - INFO - Press CTRL+C to quit
+ * Restarting with watchdog (fsevents)
+2024-03-25 10:38:55,671 - INFO -  * Restarting with watchdog (fsevents)
+ * Debugger is active!
+2024-03-25 10:38:55,760 - WARNING -  * Debugger is active!
+ * Debugger PIN: 476-892-968
+2024-03-25 10:38:55,766 - INFO -  * Debugger PIN: 476-892-968
+The homepage has been retrieved.
+2024-03-25 10:38:59,074 - INFO - The homepage has been retrieved.
+127.0.0.1 - - [25/Mar/2024 10:38:59] "GET / HTTP/1.1" 200 -
+2024-03-25 10:38:59,087 - INFO - 127.0.0.1 - - [25/Mar/2024 10:38:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Mar/2024 10:38:59] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-03-25 10:38:59,135 - INFO - 127.0.0.1 - - [25/Mar/2024 10:38:59] "GET /static/css/main.css HTTP/1.1" 304 -
+Article retrieved: 2020 CNCF Annual Report
+2024-03-25 10:39:04,175 - INFO - Article retrieved: 2020 CNCF Annual Report
+127.0.0.1 - - [25/Mar/2024 10:39:04] "GET /1 HTTP/1.1" 200 -
+2024-03-25 10:39:04,180 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:04] "GET /1 HTTP/1.1" 200 -
+127.0.0.1 - - [25/Mar/2024 10:39:04] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-03-25 10:39:04,212 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:04] "GET /static/css/main.css HTTP/1.1" 304 -
+Article retrieved: CNCF Cloud Native Interactive Landscape
+2024-03-25 10:39:09,600 - INFO - Article retrieved: CNCF Cloud Native Interactive Landscape
+127.0.0.1 - - [25/Mar/2024 10:39:09] "GET /4 HTTP/1.1" 200 -
+2024-03-25 10:39:09,601 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:09] "GET /4 HTTP/1.1" 200 -
+127.0.0.1 - - [25/Mar/2024 10:39:09] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-03-25 10:39:09,639 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:09] "GET /static/css/main.css HTTP/1.1" 304 -
+About Us page retrieved
+2024-03-25 10:39:15,151 - INFO - About Us page retrieved
+127.0.0.1 - - [25/Mar/2024 10:39:15] "GET /about HTTP/1.1" 200 -
+2024-03-25 10:39:15,155 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:15] "GET /about HTTP/1.1" 200 -
+127.0.0.1 - - [25/Mar/2024 10:39:15] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-03-25 10:39:15,188 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:15] "GET /static/css/main.css HTTP/1.1" 304 -
+The homepage has been retrieved.
+2024-03-25 10:39:19,676 - INFO - The homepage has been retrieved.
+127.0.0.1 - - [25/Mar/2024 10:39:19] "GET / HTTP/1.1" 200 -
+2024-03-25 10:39:19,677 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Mar/2024 10:39:19] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-03-25 10:39:19,714 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:19] "GET /static/css/main.css HTTP/1.1" 304 -
+404: Requested article not found
+2024-03-25 10:39:32,678 - WARNING - 404: Requested article not found
+127.0.0.1 - - [25/Mar/2024 10:39:32] "GET /10 HTTP/1.1" 404 -
+2024-03-25 10:39:32,682 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:32] "GET /10 HTTP/1.1" 404 -
+127.0.0.1 - - [25/Mar/2024 10:39:32] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-03-25 10:39:32,722 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:32] "GET /static/css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [25/Mar/2024 10:39:59] "GET /create HTTP/1.1" 200 -
+2024-03-25 10:39:59,587 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:59] "GET /create HTTP/1.1" 200 -
+127.0.0.1 - - [25/Mar/2024 10:39:59] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-03-25 10:39:59,628 - INFO - 127.0.0.1 - - [25/Mar/2024 10:39:59] "GET /static/css/main.css HTTP/1.1" 304 -
+New article created: New cloud post
+2024-03-25 10:40:34,190 - INFO - New article created: New cloud post
+127.0.0.1 - - [25/Mar/2024 10:40:34] "POST /create HTTP/1.1" 302 -
+2024-03-25 10:40:34,191 - INFO - 127.0.0.1 - - [25/Mar/2024 10:40:34] "POST /create HTTP/1.1" 302 -
+The homepage has been retrieved.
+2024-03-25 10:40:34,194 - INFO - The homepage has been retrieved.
+127.0.0.1 - - [25/Mar/2024 10:40:34] "GET / HTTP/1.1" 200 -
+2024-03-25 10:40:34,195 - INFO - 127.0.0.1 - - [25/Mar/2024 10:40:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Mar/2024 10:40:34] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-03-25 10:40:34,232 - INFO - 127.0.0.1 - - [25/Mar/2024 10:40:34] "GET /static/css/main.css HTTP/1.1" 304 -
+

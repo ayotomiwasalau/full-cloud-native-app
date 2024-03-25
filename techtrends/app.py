@@ -3,12 +3,30 @@ import sqlite3
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
 import logging
+import sys
+
+#connection count
+db_connection_count = 0
 
 # Configure logging
-logging.basicConfig(format='%(asctime)s %(levelname)s: %(message)s', level=logging.DEBUG)
+def configure_logging(log_level=logging.INFO, log_format='%(asctime)s - %(levelname)s - %(message)s'):
+    """Configures logging to both stdout and stderr.
 
+    Args:
+        log_level (int, optional): The minimum severity level for logging. Defaults to logging.INFO.
+        log_format (str, optional): The format string for log messages. Defaults to '%(asctime)s - %(levelname)s - %(message)s'.
+    """
 
-db_connection_count = 0
+    stdout_handler = logging.StreamHandler(sys.stdout)
+    stderr_handler = logging.StreamHandler(sys.stderr)
+
+    formatter = logging.Formatter(log_format)
+    stderr_handler.setFormatter(formatter)
+
+    root_logger = logging.getLogger()
+    root_logger.setLevel(log_level)
+    root_logger.addHandler(stdout_handler)
+    root_logger.addHandler(stderr_handler)
 
 # Function to get a database connection.
 # This function connects to database with the name `database.db`
@@ -30,6 +48,7 @@ def get_post(post_id):
 # Define the Flask application
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your secret key'
+configure_logging()
 
 # Define the main route of the web application 
 @app.route('/')
@@ -37,6 +56,7 @@ def index():
     connection = get_db_connection()
     posts = connection.execute('SELECT * FROM posts').fetchall()
     connection.close()
+    logging.info("The homepage has been retrieved.")
     return render_template('index.html', posts=posts)
 
 # Define how each individual article is rendered 
@@ -45,7 +65,7 @@ def index():
 def post(post_id):
     post = get_post(post_id)
     if post is None:
-        logging.info("404: Requested article with ID {} not found".format(post_id))
+        logging.warning("404: Requested article not found")
         return render_template('404.html'), 404
     else:
         logging.info("Article retrieved: {}".format(post['title']))
